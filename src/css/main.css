@@ -69,7 +69,8 @@
   width: 100%;
   height: 100%;
   z-index: -2;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 15% 85%,
       rgba(75, 0, 130, 0.7) 0%,
       transparent 50%
@@ -622,7 +623,8 @@ header {
   backdrop-filter: blur(25px);
   border: 1px solid rgba(224, 163, 255, 0.15);
   border-radius: 25px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3),
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   margin-top: 60px;
   transition: 0.5s ease all;
@@ -668,7 +670,8 @@ header {
   backdrop-filter: blur(25px);
   border: 1px solid rgba(224, 163, 255, 0.15);
   border-radius: 25px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3),
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   margin-top: 60px;
   transition: 0.5s ease all;
@@ -688,15 +691,19 @@ header {
 }
 
 .evolution__card:hover {
-  box-shadow: 0 25px 60px rgba(224, 163, 255, 0.2),
-    0 0 0 1px rgba(224, 163, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 25px 60px rgba(224, 163, 255, 0.2),
+    0 0 0 1px rgba(224, 163, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
   border-color: rgba(224, 163, 255, 0.3);
   transition: 0.5s ease all;
 }
 
 .evolution__card2:hover {
-  box-shadow: 0 25px 60px rgba(224, 163, 255, 0.2),
-    0 0 0 1px rgba(224, 163, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 25px 60px rgba(224, 163, 255, 0.2),
+    0 0 0 1px rgba(224, 163, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
   border-color: rgba(224, 163, 255, 0.3);
   transition: 0.5s ease all;
 }
@@ -887,4 +894,111 @@ header {
 .footer__info2__span:hover {
   color: #ff69b4;
   text-shadow: 0 0 8px rgba(255, 105, 180, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .hero__h1 {
+    font-size: 48px;
+  }
+
+  .quantum__cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .quantum__card {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .quantum__card__img {
+    width: 80%;
+    position: static;
+    transform: none;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .evolution__card__container,
+  .evolution__card__container2 {
+    margin: 20px auto;
+    border: none;
+    border-bottom: 3px solid aqua;
+    padding: 0 0 20px 0;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__right {
+    display: none;
+  }
+
+  .hero__h1 {
+    font-size: 36px;
+  }
+
+  .hero__stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .hero__stat {
+    width: calc(50% - 20px);
+  }
+
+  .matrix__cards1,
+  .matrix__cards2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .matrix__card {
+    transform: rotate(0deg);
+    width: 280px;
+  }
+
+  .infos__inputs {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .connect__infos__card,
+  .connect__inputs__card {
+    width: 100%;
+  }
+
+  .footer__links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .quantum__h1,
+  .matrix__title,
+  .evolution__title {
+    font-size: 32px;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__button1,
+  .hero__button2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero__stat {
+    width: 100%;
+  }
+
+  .nav__title {
+    font-size: 20px;
+  }
 }
